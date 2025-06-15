@@ -25,7 +25,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         {!imageError ? (
           <img 
-            src="https://coseuha.github.io/wurman-web-snb/images/home.jpg" 
+            src="./lovable-uploads/bb4cb26e-35b9-4e47-9a07-d52b95b840b7.png" 
             alt="Hero background" 
             className="absolute inset-0 w-full h-full object-cover"
             onError={() => setImageError(true)}
