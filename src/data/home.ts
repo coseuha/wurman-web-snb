@@ -1,34 +1,34 @@
-import { BookOpen, Presentation, ImageIcon } from 'lucide-react';
+import { BookOpen, Lightbulb, Users } from 'lucide-react';
 
 export const homeContent = {
   hero: {
-    title: 'L'Architecte de l'Information',
-    subtitle: 'Pionnier de l'organisation de la connaissance et fondateur de TED.',
-    cta: 'Découvrir son Œuvre',
-    ctaLink: '/oeuvres'
+    title: "L'Architecte de l'Information",
+    subtitle: "Pionnier de l'organisation de la connaissance et fondateur de TED.",
+    cta: "Découvrir son Œuvre",
+    ctaLink: "/biographie"
   },
   featureCards: [
     {
       Icon: BookOpen,
-      title: 'Livres et Publications',
-      description: 'Explorez une vaste collection d'ouvrages qui ont innové le domaine de l'architecture de l'information.',
-      link: '/oeuvres'
+      title: "Biographie",
+      description: "Découvrez l'histoire et les réalisations de Richard Saul Wurman.",
+      link: "/biographie"
     },
     {
-      Icon: Presentation,
-      title: 'Conférences et Entretiens',
-      description: 'Revivez les moments clés de ses interventions, y compris la fondation des conférences TED.',
-      link: '/oeuvres'
+      Icon: Lightbulb,
+      title: "Œuvres",
+      description: "Explorez ses livres, conférences et projets innovants.",
+      link: "/oeuvres"
     },
     {
-      Icon: ImageIcon,
-      title: 'Concepts Clés',
-      description: 'Plongez dans les idées fondamentales qui ont révolutionné la manière dont nous comprenons l'information.',
-      link: '/architecture-information'
+      Icon: Users,
+      title: "Contact",
+      description: "Entrez en contact avec Richard Saul Wurman.",
+      link: "/contact"
     }
   ],
   quote: {
-    text: 'L'information n'est pas ce que vous pensez. C'est ce que vous ne savez pas que vous ne savez pas.',
-    author: 'Richard Saul Wurman'
+    text: "L'information n'est pas ce que vous pensez. C'est ce que vous ne savez pas.",
+    author: "Richard Saul Wurman"
   }
 };

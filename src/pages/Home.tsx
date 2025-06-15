@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const BASE_URL = '/wurman-web-snb/';
+const BASE_URL = 'https://coseuha.github.io/wurman-web-snb/';
 
 const Card = ({ Icon, title, description, link }: { Icon: React.ElementType, title: string, description: string, link: string }) => (
   <Link to={link} className="block bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1">
@@ -15,7 +15,7 @@ const Card = ({ Icon, title, description, link }: { Icon: React.ElementType, tit
 );
 
 const Home = () => {
-  useDocumentMeta('Richard Saul Wurman | Accueil', 'Le site officiel de Richard Saul Wurman, pionnier de l'architecture de l'information et fondateur de TED.');
+  useDocumentMeta("Richard Saul Wurman | Accueil", "Le site officiel de Richard Saul Wurman, pionnier de l'architecture de l'information et fondateur de TED.");
   const [imageError, setImageError] = useState(false);
 
   const { hero, featureCards, quote } = homeContent;
