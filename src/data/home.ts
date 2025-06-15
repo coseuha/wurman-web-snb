@@ -6,7 +6,7 @@ export const homeContent = {
     subtitle: 'Pionnier de l'organisation de la connaissance et fondateur de TED.',
     cta: 'Découvrir son Œuvre',
     ctaLink: '/oeuvres',
-    imageUrl: '/images/home.jpg'
+    imageUrl: '/wurman-web-snb/images/home.jpg'
   },
   featureCards: [
     {

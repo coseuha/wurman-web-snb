@@ -1,8 +1,8 @@
-
 import { useDocumentMeta } from '@/hooks/useDocumentMeta';
 import { homeContent } from '@/data/home';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Card = ({ Icon, title, description, link }: { Icon: React.ElementType, title: string, description: string, link: string }) => (
   <Link to={link} className="block bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1">
@@ -13,7 +13,8 @@ const Card = ({ Icon, title, description, link }: { Icon: React.ElementType, tit
 );
 
 const Home = () => {
-  useDocumentMeta('Richard Saul Wurman | Accueil', 'Le site officiel de Richard Saul Wurman, pionnier de l’architecture de l’information et fondateur de TED.');
+  useDocumentMeta('Richard Saul Wurman | Accueil', 'Le site officiel de Richard Saul Wurman, pionnier de l'architecture de l'information et fondateur de TED.');
+  const [imageError, setImageError] = useState(false);
 
   const { hero, featureCards, quote } = homeContent;
 
@@ -22,7 +23,16 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-white">
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <img src={hero.imageUrl} alt="Hero background" className="absolute inset-0 w-full h-full object-cover" />
+        {!imageError ? (
+          <img 
+            src={hero.imageUrl} 
+            alt="Hero background" 
+            className="absolute inset-0 w-full h-full object-cover"
+            onError={() => setImageError(true)}
+          />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+        )}
         <div className="relative z-20 text-center p-4">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">{hero.title}</h1>
           <p className="mt-4 text-xl md:text-2xl max-w-3xl mx-auto">{hero.subtitle}</p>
