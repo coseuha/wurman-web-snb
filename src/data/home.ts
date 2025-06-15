@@ -5,8 +5,7 @@ export const homeContent = {
     title: 'L'Architecte de l'Information',
     subtitle: 'Pionnier de l'organisation de la connaissance et fondateur de TED.',
     cta: 'Découvrir son Œuvre',
-    ctaLink: '/oeuvres',
-    imageUrl: '/wurman-web-snb/images/home.jpg'
+    ctaLink: '/oeuvres'
   },
   featureCards: [
     {

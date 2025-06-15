@@ -4,6 +4,9 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+// Import de l'image
+import homeImage from '../assets/home.jpg';
+
 const Card = ({ Icon, title, description, link }: { Icon: React.ElementType, title: string, description: string, link: string }) => (
   <Link to={link} className="block bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1">
     <Icon className="w-10 h-10 text-accent-orange mb-4" />
@@ -25,7 +28,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         {!imageError ? (
           <img 
-            src={hero.imageUrl} 
+            src={homeImage} 
             alt="Hero background" 
             className="absolute inset-0 w-full h-full object-cover"
             onError={() => setImageError(true)}
