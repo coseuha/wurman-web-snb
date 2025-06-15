@@ -1,3 +1,4 @@
+import { footerInfo } from '@/data/site';
 import { Twitter, Linkedin } from 'lucide-react';
 
 const icons: { [key: string]: React.ElementType } = {
@@ -31,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Seuha Nour Barfia et El m'ghari Ghitha. Tous droits réservés.
+          Seuha Nour Barfia et El m'ghari Ghitha. Tous droits réservés.
         </div>
       </div>
     </footer>
