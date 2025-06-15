@@ -12,7 +12,7 @@ export const homeContent = {
       Icon: BookOpen,
       title: "Biographie",
       description: "Découvrez l'histoire et les réalisations de Richard Saul Wurman.",
-      link: "/biographie"
+      link: "/a-propos"
     },
     {
       Icon: Lightbulb,
