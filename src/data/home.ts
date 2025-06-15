@@ -1,19 +1,18 @@
-
 import { BookOpen, Presentation, ImageIcon } from 'lucide-react';
 
 export const homeContent = {
   hero: {
-    title: 'L’Architecte de l’Information',
-    subtitle: 'Pionnier de l’organisation de la connaissance et fondateur de TED.',
+    title: 'L'Architecte de l'Information',
+    subtitle: 'Pionnier de l'organisation de la connaissance et fondateur de TED.',
     cta: 'Découvrir son Œuvre',
     ctaLink: '/oeuvres',
-    imageUrl: '/lovable-uploads/bb4cb26e-35b9-4e47-9a07-d52b95b840b7.png'
+    imageUrl: '/images/home.jpg'
   },
   featureCards: [
     {
       Icon: BookOpen,
       title: 'Livres et Publications',
-      description: 'Explorez une vaste collection d’ouvrages qui ont innové le domaine de l’architecture de l’information.',
+      description: 'Explorez une vaste collection d'ouvrages qui ont innové le domaine de l'architecture de l'information.',
       link: '/oeuvres'
     },
     {
@@ -25,12 +24,12 @@ export const homeContent = {
     {
       Icon: ImageIcon,
       title: 'Concepts Clés',
-      description: 'Plongez dans les idées fondamentales qui ont révolutionné la manière dont nous comprenons l’information.',
+      description: 'Plongez dans les idées fondamentales qui ont révolutionné la manière dont nous comprenons l'information.',
       link: '/architecture-information'
     }
   ],
   quote: {
-    text: 'L’information n’est pas ce que vous pensez. C’est ce que vous ne savez pas que vous ne savez pas.',
+    text: 'L'information n'est pas ce que vous pensez. C'est ce que vous ne savez pas que vous ne savez pas.',
     author: 'Richard Saul Wurman'
   }
 };
