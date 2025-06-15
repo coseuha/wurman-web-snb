@@ -5,7 +5,7 @@ export const homeContent = {
     title: "L'Architecte de l'Information",
     subtitle: "Pionnier de l'organisation de la connaissance et fondateur de TED.",
     cta: "Découvrir son Œuvre",
-    ctaLink: "/biographie"
+    ctaLink: "/oeuvres"
   },
   featureCards: [
     {
